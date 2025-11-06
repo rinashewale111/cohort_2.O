@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment1</title>
+     
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            margin: 5px;
+            padding: 2px;
+        }
+
+        .nav{
+            background-color:#052f4a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .nav h1{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .nav p{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            font-style: italic;
+        }
+        .content{
+            margin: 4px;
+            padding: 20px;
+        }
+        .content h2{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            columns: black;
+            text-align: center;
+            margin: 10px;
+        }
+        .content p{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 800;
+            color: black;
+            text-align: center;
+        }
+        .box{
+            background-color: #a5cde6;
+            border: 2px solid #a5cde6;
+            padding: 50px;
+            margin: 50px 0;
+        }
+
+        .box h2{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+            color: black;
+        }
+
+         .box li{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            color: black;
+            margin: 10px auto;
+            padding: 10px;
+            background-color: #e8f1f2;
+            list-style: none;
+            text-align: center;
+            
+         }
+
+          .box2{
+           background-color: rgb(224, 215, 178);
+           border: 2px solid rgb(224, 215, 178);
+           padding: 50px;
+           margin: 50px 0;
+        }
+
+        .box2 h2{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+            color: black;
+        }
+
+        .box2 li{
+             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            color: black;
+            margin: 10px auto;
+            padding: 10px;
+            background-color: #e8f1f2;
+            list-style: none;
+            text-align: center;
+        }
+        .box3{
+           background-color: rgb(211, 185, 228);
+           border: 2px solid rgb(211, 185, 228);
+           padding: 50px;
+           margin: 50px 0;
+        }
+        .box h2{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+            color: black;
+        }
+        .box3 li{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            color: black;
+            margin: 8px auto;
+            padding: 10px;
+            background-color: #e8f1f2;
+            list-style: none;
+            text-align: center;
+        }
+        .box4{
+           background-color: rgb(172, 231, 210);
+           border: 2px solid rgb(172, 231, 210);
+           padding: 50px;
+           margin: 50px 0;
+        }
+        .box4 h2{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+            color: black;
+        }
+        .box4 li{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            color: black;
+            margin: 10px auto;
+            padding: 10px;
+            background-color: #e8f1f2;
+            list-style: none;
+            text-align: center;
+        }
+        
+        footer{
+           background-color: #01131e;
+           color: white;
+           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           text-align: center;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+            margin: 30px;
+           padding: 50px;
+        }
+
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="nav">
+        <h1>RINA SHEWALE</h1>
+        <p>Web Developer | Designer | Learner</p>
+    </div>
+    <div class="content">
+        <h2>ABOUT ME</h2>
+        <p>Hello! I am learning HTML and CSS. This is my resume-style webpage
+            where I practiced text styling, colors, backgrounds, and fonts.
+            My goal is to become an expert web developer and designer.
+        </p>
+        <div class="box">
+            <h2>EDUCATION</h2>
+            <ul>
+                <li>Bachelor's Degree in Computer Science</li>
+                <li>Higher Secondary - XYZ College</li>
+                <li>Certified Web Developer Course</li>
+                <li>Advanced CSS and HTML Workshop</li>
+            </ul>
+        </div>
+
+        <div class="box2">
+            <h2>SKILLS</h2>
+            <ul>
+                <li>FRONTEND DEVELOPMENT</li>
+                <li>JAVA PROGRAMMING</li>
+                <li>NEXT.JS</li>
+                <li>UI/UX DESIGNING</li>
+            </ul>
+        </div>
+        <div class="box3">
+            <h2>PROJECTS</h2>
+            <ul>
+                <li>Personal Portfolio Website</li>
+                <li>Landing page- product showcase design</li>
+                <li>Responsive Blog Layout</li>
+                <li>Interactive To-Do List App</li>
+            </ul>
+        </div>
+        <div class="box4">
+            <h2>CONTACT ME</h2>
+            <ul>
+                <li>Email: rinashewale@example.com</li>
+                <li>Phone: +91 9999999999</li>
+                <li>LinkedIn: linkedin.com/in/rinashewale</li>
+                <li>Instagram: @rinashewale</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 RESUME WEBSITE</p>
+    </footer>
+
+</body>
+
+</html>
