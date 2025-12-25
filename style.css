@@ -1,92 +1,296 @@
-<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-=======
-@font-face {
-    font-family: apple;
-    src: url(./sf-pro-text_semibold.woff2);
-}
-
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
->>>>>>> 557ec61f16f9e7d131b024060f441fd720027387
 }
 
 html,
 body {
-<<<<<<< HEAD
   width: 100%;
   height: 100%;
   font-family: apple;
 }
 
 main {
-  background-color: white;
   width: 100%;
-  height: 100%;
+  padding: 1rem;
+}
+main section.navbar {
+  width: 100%;
+}
+main section.navbar nav {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 1rem;
 }
-main section {
-  width: 30%;
-  height: 30%;
-  flex: 1;
-  transition: all linear 0.6s;
-  cursor: pointer;
+main section.navbar nav h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
-main section img {
+main section.navbar nav h2 i {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+main section.navbar nav ul {
+  display: none;
+}
+main section.navbar nav .btn {
+  display: none;
+}
+main section.content {
   width: 100%;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+main section.content .text h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+main section.content .heroimg {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main section.content .heroimg .card {
+  width: 100%;
+  height: 400px;
+  padding: 0rem 2rem;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+main section.content .heroimg .card img {
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-main section:hover {
-  flex-grow: 2;
-}/*# sourceMappingURL=style.css.map */
-=======
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+main section.content .heroimg .box {
+  width: 60%;
+  height: 40px;
+  background: linear-gradient(transparent, black);
+  padding: 12rem;
+  bottom: 4rem;
+  left: 0;
+  margin-left: 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: absolute;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all ease-in 2s;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main section.content .heroimg .box h2 {
+  font-size: 3rem;
+  color: white;
+  margin-left: -9rem;
+}
+main section.content .heroimg .box h3 {
+  font-size: 2rem;
+  color: white;
+  margin-left: -9rem;
+}
+main section.content .heroimg .card:hover .box {
+  opacity: 1;
+  bottom: 0%;
+  transform: translateY(0);
+}
+main section.content2 {
+  width: 100%;
+  margin-top: 12rem;
+  background-color: rgb(225, 217, 206);
+}
+main section.content2 .text {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+main section.content2 .text h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-top: 2rem;
+}
+main section.content2 .text ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+}
+main section.content2 .text ul li {
+  list-style: none;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+}
+main section.content2 .herocard {
+  width: 100%;
+  padding: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main section.content2 .herocard .card1 {
+  width: 100%;
+  border-radius: 20px;
+}
+main section.content2 .herocard .card1 img {
+  max-width: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+main section.content2 .herocard .view {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 2rem;
+  margin-left: 3rem;
+  text-align: center;
+}
+main section.content2 .herocard .view h3 {
+  background-color: #000000;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-left: -3rem;
+  border: 2px solid black;
+  border-radius: 50px;
+  padding: 1rem 2rem;
+}
+main section.content2 .herocard .view h3 i {
+  font-size: 2rem;
+  font-weight: 500;
 }
 
-#box {
-    width: 100%;
-    height: 100vh;
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLKZtWAUn2nawlsQXnVuPyvRn44W8E_Wssnw&s');
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    
-}
-
-h1{
-    color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 20vh;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-
-} 
-
-button{
-    margin: 15px;
-    padding: 4px;
-    background-color: transparent;
+@media (min-width: 900px) {
+  main section.navbar nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+  }
+  main section.navbar nav h1 {
+    font-size: 4rem;
+  }
+  main section.navbar nav h2 i {
+    display: none;
+  }
+  main section.navbar nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    list-style: none;
+    margin: 0 auto;
+  }
+  main section.navbar nav ul li {
+    display: block;
+  }
+  main section.navbar nav ul li a {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 400;
+    color: black;
+  }
+  main section.navbar nav .btn {
+    display: block;
+    gap: 4rem;
+  }
+  main section.navbar nav .btn #btn1 {
+    background-color: #fff;
+    border: 2px solid black;
     border-radius: 50px;
-    border: 2px solid white;
+    font-size: 1.4rem;
+    padding: 1rem 3rem;
+  }
+  main section.navbar nav .btn #btn2 {
+    background-color: #000000;
+    border: 2px solid rgb(0, 0, 0);
     color: white;
-    font-size: 20px;
-    font-weight: bold;
+    border-radius: 50px;
+    font-size: 1.4rem;
+    padding: 1rem 3rem;
+  }
+  main section.content {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(225, 217, 206);
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap: 2rem;
+  }
+  main section.content .text {
+    width: 40%;
+    padding: 1rem 2rem;
+  }
+  main section.content .text h2 {
+    font-size: 6rem;
+    font-weight: 400;
     text-align: center;
-
-}
-
-
->>>>>>> 557ec61f16f9e7d131b024060f441fd720027387
+  }
+  main section.content .heroimg {
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 12rem;
+    transition: all 0.5s ease;
+  }
+  main section.content .heroimg .card {
+    width: 100%;
+    height: 40%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    flex: 1;
+    transition: flex 0.6s ease, transform 0.6s ease;
+  }
+  main section.content .heroimg .card img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 20px;
+  }
+  main section.content .heroimg .card .box {
+    width: 70%;
+    height: 20%;
+    opacity: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: all 1.5s ease-in;
+    margin-left: 2rem;
+    overflow: hidden;
+    border-radius: 28px;
+  }
+  main section.content .heroimg .card:hover {
+    flex-grow: 2;
+    transform: scale(1.02);
+  }
+  main section.content .heroimg .card:hover .box {
+    width: 92%;
+    opacity: 1;
+    transform: translateY(0);
+    border-radius: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
